@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="340" id="3BG-U3-3qk" customClass="CommentCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="340"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3BG-U3-3qk" id="K9n-C0-0Ib">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="339.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qnW-1S-tEk">
+                        <rect key="frame" x="77" y="46" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JCB-WJ-aaf">
+                        <rect key="frame" x="18" y="78" width="284" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MFz-TN-p4S">
+                        <rect key="frame" x="77" y="16" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n6L-X8-g14">
+                        <rect key="frame" x="18" y="106" width="284" height="160"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e1e-lI-IPg">
+                                <rect key="frame" x="0.0" y="0.0" width="284" height="160"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2w-uP-rgJ">
+                                <rect key="frame" x="114" y="52" width="55" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="Huv-n9-89X"/>
+                                    <constraint firstAttribute="height" constant="55" id="ZKo-sO-SeY"/>
+                                </constraints>
+                                <state key="normal" image="video-play"/>
+                                <connections>
+                                    <action selector="playVideo:" destination="3BG-U3-3qk" eventType="touchUpInside" id="tzX-hv-3tm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="t2w-uP-rgJ" firstAttribute="centerX" secondItem="n6L-X8-g14" secondAttribute="centerX" id="0Yz-D3-oxB"/>
+                            <constraint firstItem="t2w-uP-rgJ" firstAttribute="centerY" secondItem="n6L-X8-g14" secondAttribute="centerY" id="5vg-BW-c2l"/>
+                            <constraint firstAttribute="bottom" secondItem="e1e-lI-IPg" secondAttribute="bottom" id="8Bj-Et-huP"/>
+                            <constraint firstItem="e1e-lI-IPg" firstAttribute="top" secondItem="n6L-X8-g14" secondAttribute="top" id="BAB-8L-4o5"/>
+                            <constraint firstAttribute="width" secondItem="n6L-X8-g14" secondAttribute="height" multiplier="320:180" id="V92-q6-9LM"/>
+                            <constraint firstItem="e1e-lI-IPg" firstAttribute="leading" secondItem="n6L-X8-g14" secondAttribute="leading" id="YAl-dc-0vn"/>
+                            <constraint firstAttribute="trailing" secondItem="e1e-lI-IPg" secondAttribute="trailing" id="cwZ-vp-Wkx"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="th" translatesAutoresizingMaskIntoConstraints="NO" id="5VO-gW-uP3">
+                        <rect key="frame" x="19" y="17" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="ad6-ha-d6b"/>
+                            <constraint firstAttribute="height" constant="50" id="o48-f9-4jm"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="MFz-TN-p4S" firstAttribute="leading" secondItem="5VO-gW-uP3" secondAttribute="trailing" constant="10" id="1bD-4z-Rcx"/>
+                    <constraint firstItem="JCB-WJ-aaf" firstAttribute="leading" secondItem="K9n-C0-0Ib" secondAttribute="leadingMargin" constant="10" id="M6S-O1-dHG"/>
+                    <constraint firstItem="n6L-X8-g14" firstAttribute="top" secondItem="JCB-WJ-aaf" secondAttribute="bottom" constant="10" id="Prv-SV-DPy"/>
+                    <constraint firstItem="MFz-TN-p4S" firstAttribute="top" secondItem="5VO-gW-uP3" secondAttribute="top" id="SDj-5W-Xta"/>
+                    <constraint firstItem="5VO-gW-uP3" firstAttribute="leading" secondItem="K9n-C0-0Ib" secondAttribute="leadingMargin" constant="10" id="Y0T-EJ-8HX"/>
+                    <constraint firstItem="qnW-1S-tEk" firstAttribute="leading" secondItem="5VO-gW-uP3" secondAttribute="trailing" constant="10" id="Y30-a0-AIf"/>
+                    <constraint firstItem="JCB-WJ-aaf" firstAttribute="top" secondItem="5VO-gW-uP3" secondAttribute="bottom" constant="10" id="iM6-YA-WRP"/>
+                    <constraint firstItem="n6L-X8-g14" firstAttribute="leading" secondItem="K9n-C0-0Ib" secondAttribute="leadingMargin" constant="10" id="oNa-0g-Fif"/>
+                    <constraint firstItem="5VO-gW-uP3" firstAttribute="top" secondItem="K9n-C0-0Ib" secondAttribute="topMargin" constant="10" id="pjg-jB-YY8"/>
+                    <constraint firstItem="qnW-1S-tEk" firstAttribute="bottom" secondItem="5VO-gW-uP3" secondAttribute="bottom" id="u7y-kX-Swd"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="n6L-X8-g14" secondAttribute="trailing" constant="10" id="uOG-sn-S1Y"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="JCB-WJ-aaf" secondAttribute="trailing" constant="10" id="ywB-fG-8fE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="icon" destination="5VO-gW-uP3" id="BRb-fu-68y"/>
+                <outlet property="name" destination="MFz-TN-p4S" id="nLi-7L-RbD"/>
+                <outlet property="playBtn" destination="t2w-uP-rgJ" id="OQE-53-7Pf"/>
+                <outlet property="text" destination="JCB-WJ-aaf" id="Xvg-bI-zUn"/>
+                <outlet property="time" destination="qnW-1S-tEk" id="OGh-cF-Wfe"/>
+                <outlet property="videoImage" destination="e1e-lI-IPg" id="ZEK-Ip-I8H"/>
+                <outlet property="videoView" destination="n6L-X8-g14" id="tBB-8B-BEg"/>
+            </connections>
+            <point key="canvasLocation" x="86" y="441"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="th" width="300" height="156"/>
+        <image name="video-play" width="71" height="71"/>
+    </resources>
+</document>
